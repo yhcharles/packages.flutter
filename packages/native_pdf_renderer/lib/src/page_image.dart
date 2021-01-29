@@ -4,7 +4,7 @@ part of 'page.dart';
 /// in a pre-selected format in [_render] method
 /// of [PdfPage]
 class PdfPageImage {
-  const PdfPageImage._({
+  const PdfPageImage({
     @required this.id,
     @required this.pageNumber,
     @required this.width,
@@ -79,7 +79,7 @@ class PdfPageImage {
     final retWidth = obj['width'] as int, retHeight = obj['height'] as int;
     final pixels = Uint8List.fromList(obj['data']);
 
-    return PdfPageImage._(
+    return PdfPageImage(
       id: pageId,
       pageNumber: pageNumber,
       width: retWidth,
